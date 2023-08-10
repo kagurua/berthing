@@ -1,0 +1,3 @@
+#CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --backbone resnet --lr 0.01 --workers 4 --epochs 40 --batch-size 16 --gpu-ids 0,1,2,3 --checkname deeplab-resnet --eval-interval 1 --dataset coco
+#CUDA_VISIBLE_DEVICES=0 python train.py --backbone resnet --lr 0.01 --workers 2 --epochs 100 --batch-size 3 --gpu-ids 0 --checkname deeplab-resnet --eval-interval 1 --dataset cityscapes_berthing --gap 2
+CUDA_VISIBLE_DEVICES=1,2,3 python train.py --backbone resnet --lr 0.01 --workers 4 --epochs 200 --batch-size 12 --gpu-ids 0,1,2 --checkname deeplab-resnet --eval-interval 1 --dataset cityscapes
